@@ -1,4 +1,4 @@
-*{
+/**{
     margin: 10;
     padding: 10;
 }
@@ -69,6 +69,99 @@
 
 .start{
     background-color: green;
+}
+.end{
+    background-color: rgb(196, 100, 100);
+}*/
+html{
+background-color: beige;
+max-height: 100vh;
+max-width: 100vw;
+}
+body{
+    background-color: aqua;
+    max-height: 100vh;
+    max-width: 100vw;
+   
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    align-content:space-between;
+    width: 100vw;
+    height: 100vh;
+}
+.playerCharacterView{
+background-color: rgb(152, 227, 152);
+margin: 20px;
+padding: 20px;
+width: 600px;
+height: 600px;
+}
+.info{
+background-color:aqua;
+margin: 30px;
+padding: 20px;
+width: 300px;
+height: 300px;
+
+
+}
+.enemyCharacterView{
+background-color: rgb(108, 155, 220);
+margin: 20px;
+padding: 20px;
+width: 600px;
+height: 600px;
+}
+.playerImage{
+width: 400px;
+height: 400px;
+}
+.playerStats{
+    border: solid black 10px;
+    margin: 10px;
+    padding: 10px;
+
+}
+.enemyImage{
+    width: 400px;
+    height: 400px;
+}
+.enemyStats{
+    border: solid black 10px;
+    margin: 10px;
+    padding: 10px;
+
+}
+.start{
+    background-color: rgb(137, 142, 140);
+    border: none;
+    color: white;
+    border-radius: 12px;
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    box-shadow: 2px 6px 18px 3px black;
+    margin: 20px;
+    
+  
+  
+    
+}
+.retreat{
+    background-color: rgb(137, 142, 140);
+    border: none;
+    color: white;
+    border-radius: 12px;
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    box-shadow: 2px 6px 18px 3px black;
+    margin: 20px;
+
 }
 
     

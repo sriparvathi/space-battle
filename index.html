@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceBattle</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    
 </head>
+
 <body>
 
-        
-        <div class="playerCharacterView" >
-            <div class="nameBox2">USS Schwarzenegger</div>
-            <div class="playerImage"></div>
+    <div class="container">
+        <div class="playerCharacterView">
+            <h1 class="nameBox2">USS Schwarzenegger</h1>
+            <img class="playerImage" src="/space_hero.gif"><img>
             <div class="playerStats">
-
-            Hull : 15 <br>
-            FirePower : 5 <br>
-            Accuracy : .7 <br>
+                <ul>
+                    <li id = "hull1">Hull : 15</li> 
+                    <li>FirePower : 5</li> 
+                    <li>Accuracy : .7</li> 
+    
+                    </ul> 
 
             </div>
         </div>
-        <div class = "info">
-            <input class = "start" type="button" value="START" onclick= "startBattle()";/>
+        <div class="info">
+            <input class="start" type="button" value="START" onclick="startBattle()" ; />
+            <input class="retreat" type="button" value="RETREAT" onclick="retreat()" ; />
 
         </div>
-        <div class="bodyContainer">
-            <div class="enemyCharacterView">
-               
-                <div class="nameBox1">Enemy</div>
-                <div class="enemyImage"></div>
-                    <div class="enemyStats">
-                        Hull : 6 <br>
-                        FirePower : 3 <br>
-                        Accuracy : .6 <br>
-        
-                    </div>
-               </div> 
+
+        <div class="enemyCharacterView">
+
+            <h1 class="nameBox1">Enemy</h1>
+            <img class="enemyImage" src="/enemy.gif"><img>
+            <div class="enemyStats">
+                <ul>
+                <li id = "hull2">Hull : 6</li> 
+                <li>FirePower : 3</li> 
+                <li>Accuracy : .6</li> 
+
+                </ul> 
+                
+                
+
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
+    
 </body>
+
 </html>
